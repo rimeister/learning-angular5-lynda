@@ -15,4 +15,6 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+// Exports module created in this file, is imported in main.ts
 export class AppModule { }
