@@ -1,7 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
+// Import angular core
 import { NgModule } from '@angular/core';
 
+// import the paltform browser
+import { BrowserModule } from '@angular/platform-browser';
 
+/* Because Angular is very modular, we need to import 
+the FormsModule in order to use ngModel on our form input element. */
+import { FormsModule } from '@angular/forms';
+
+// Import the app component we've created
 import { AppComponent } from './app.component';
 
 
@@ -10,7 +17,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
