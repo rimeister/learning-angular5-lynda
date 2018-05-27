@@ -8,6 +8,9 @@ import { BrowserModule } from '@angular/platform-browser';
 the FormsModule in order to use ngModel on our form input element. */
 import { FormsModule } from '@angular/forms';
 
+// Import HttpClientModule, so we can get data from JSON file
+import { HttpClientModule } from '@angular/common/http';
+
 // Import the app component we've created
 import { AppComponent } from './app.component';
 
@@ -18,7 +21,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
