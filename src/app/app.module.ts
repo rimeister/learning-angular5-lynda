@@ -17,11 +17,15 @@ import { AppComponent } from './app.component';
 // Import the artist-item component
 import { ArtistItemsComponent } from './artist-items/artist-items.component';
 
+// Import search artists pipe
+import { SearchArtistsPipe } from './search-artists.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArtistItemsComponent
+    ArtistItemsComponent,
+    SearchArtistsPipe
   ],
   imports: [
     BrowserModule,
