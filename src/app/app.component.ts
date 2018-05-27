@@ -19,8 +19,9 @@ export class AppComponent {
 
 	query: string;
 	artists: object; // Defining data types gives you better error control
-	showArtist(e) {
+	showArtist(e, item) {
 		console.log(e);
+		this.query = item.name;
 	}
 
 	constructor() {
