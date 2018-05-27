@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root', // Identifies a custom html tag, where the component will be installed, found in index.html
-  templateUrl: './app.component.html' // Points to html template
+  templateUrl: './app.component.html', // Points to html template
   styles: [
   	`
   		.list-group-item:first-child {
