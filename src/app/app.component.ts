@@ -20,11 +20,13 @@ export class AppComponent implements OnInit {
 
 	query: string;
 	artists: object; // Defining data types gives you better error control
-	
+	currentArtist: object;
+
 	// This is how you update thing after the constructor; value is initialized in constructor, updated here.
 	showArtist(item) {
 		this.query = item.name;
 		item.highlight = !item.highlight;
+		this.currentArtist = item;
 	}
 
 	// Private variable of type HTTPClient

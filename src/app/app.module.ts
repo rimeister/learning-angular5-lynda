@@ -19,13 +19,15 @@ import { ArtistItemsComponent } from './artist-items/artist-items.component';
 
 // Import search artists pipe
 import { SearchArtistsPipe } from './search-artists.pipe';
+import { ArtistDetailsComponent } from './artist-details/artist-details.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ArtistItemsComponent,
-    SearchArtistsPipe
+    SearchArtistsPipe,
+    ArtistDetailsComponent
   ],
   imports: [
     BrowserModule,
