@@ -19,13 +19,14 @@ export class AppComponent {
 
 	query: string;
 	artists: object; // Defining data types gives you better error control
-	showArtist(e, item) {
-		console.log(e);
+	
+	// This is how you update thing after the constructor; value is initialized in constructor, updated here.
+	showArtist(item) {
 		this.query = item.name;
 	}
 
 	constructor() {
-		this.query = 'Barot';
+		this.query = '';
 		// "Components become more powerful when they allow you to work with data (e.g., data below)"
 		// Directives allow you to manipulate the data in order to display it within your template
 		this.artists = [
