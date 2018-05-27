@@ -14,10 +14,14 @@ import { HttpClientModule } from '@angular/common/http';
 // Import the app component we've created
 import { AppComponent } from './app.component';
 
+// Import the artist-item component
+import { ArtistItemsComponent } from './artist-items/artist-items.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArtistItemsComponent
   ],
   imports: [
     BrowserModule,

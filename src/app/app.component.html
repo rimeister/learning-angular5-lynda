@@ -24,14 +24,8 @@
 	        *ngFor="let artist of artists"
 	        (click)="showArtist(artist)" 
 	        [style.backgroundColor]="artist.highlight ? '#EEE' : '#FFF'"> <!-- Uses an ng for loop directive to loop through artists -->
-	            <div class="media">
-	            	<!-- src uses a [prop] so that the src attribute isn't going to display the image until the expression in the right side has been evaulated -- safer than just an expression-->
-	            	<img class="mr-3 rounded align-self-center img-fluid" style="width:70px;" [src]="'./assets/images/' + artist.shortname + '_tn.jpg'" alt="{{ 'Photo of ' + artist.name }}">
-	              <div class="media-body align-self-center">
-	                <h5 class="m-0">{{ artist.name }}</h5>
-	                {{ artist.reknown }}
-	              </div><!-- media body -->
-	            </div><!-- media -->
+	        <!-- pass in 'artist' variable specified above through prop called artistVar-->
+	        <app-artist-items [artistVar]="artist"></app-artist-items>
 	        </a><!-- link -->
 	      </div><!-- list-group -->
 	    </div><!-- col -->

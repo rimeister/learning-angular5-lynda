@@ -1,5 +1,5 @@
 // Like modules, built using imports, decorators, and exports 
-import { Component OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({

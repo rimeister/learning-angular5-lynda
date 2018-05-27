@@ -1,0 +1,8 @@
+<div class="media">
+<!-- src uses a [prop] so that the src attribute isn't going to display the image until the expression in the right side has been evaulated -- safer than just an expression-->
+<img class="mr-3 rounded align-self-center img-fluid" style="width:70px;" [src]="'./assets/images/' + artistVar.shortname + '_tn.jpg'" alt="{{ 'Photo of ' + artistVar.name }}">
+<div class="media-body align-self-center">
+<h5 class="m-0">{{ artistVar.name }}</h5>
+{{ artistVar.reknown }}
+</div><!-- media body -->
+</div><!-- media -->
