@@ -19,6 +19,9 @@ export class AppComponent {
 
 	query: string;
 	artists: object; // Defining data types gives you better error control
+	showArtist(e) {
+		console.log(e);
+	}
 
 	constructor() {
 		this.query = 'Barot';
