@@ -32,7 +32,6 @@ export class AppComponent implements OnInit {
 		this.query = '';
 		// "Components become more powerful when they allow you to work with data (e.g., data below)"
 		// Directives allow you to manipulate the data in order to display it within your template
-		this.artists = []
 	}
 
 	ngOnInit(): void { // Void, so of no type request -- get, post, etc.
